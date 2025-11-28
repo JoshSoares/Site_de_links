@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidroBox | Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-image: url('file:///G:/Projeto%20SITE%20-%20Vidrobox/vidros-empilhados.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .logo {
+            margin-bottom: 20px;
+        }
+        
+        .logo-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+        }
+        
+        .profile h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .profile p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+        
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .link-item {
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height: 70px;
+        }
+        
+        .link-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            transition: all 0.3s ease;
+            z-index: 0;
+        }
+        
+        .link-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .link-item:hover .link-bg {
+            opacity: 0.7;
+            transform: scale(1.05);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+        
+        .partnership {
+            background: rgba(255, 215, 0, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .logo-img {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .profile h1 {
+                font-size: 24px;
+            }
+            
+            .link-item {
+                font-size: 16px;
+                padding: 12px 20px;
+                height: 65px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="file:///G:/Projeto%20SITE%20-%20Vidrobox/LOGO%20VIDROBOX.png" alt="Logo VidroBox" class="logo-img">
+        </div>
+        
+        <div class="profile">
+            <h1>Vidraçaria <span class="highlight">VidroBox</span></h1>
+            <p>Espelhos | Box | Janelas | Portas</p>
+            
+            <div class="partnership">
+                <p><i class="fas fa-handshake"></i> Parcerias com <span class="highlight">VidroBox</span></p>
+                <div class="link-bg" style="background-image: url('https://images.unsplash.com/photo-1623535235742-5e0d0de8a4a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="link-content">
+            </div>
+            
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> (87) 9134-0026</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Conselheiro Paes Barreto, 240, Pesqueira - PE, 55.200-000</p>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="https://wa.me/558791340026?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20de%20vidraçaria" class="link-item" target="_blank">
+                <div class="link-bg" style="background-image: url('https://images.unsplash.com/photo-1623535235742-5e0d0de8a4a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="link-content">
+                    <i class="fab fa-whatsapp"></i> WhatsApp 1
+                </div>
+            </a>
+            <a href="https://wa.me/5587981689655?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20de%20vidraçaria" class="link-item" target="_blank">
+                <div class="link-bg" style="background-image: url('https://images.unsplash.com/photo-1623535235742-5e0d0de8a4a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="link-content">
+                    <i class="fab fa-whatsapp"></i> WhatsApp 2
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/vidrobox14/" class="link-item" target="_blank">
+                <div class="link-bg" style="background-image: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="link-content">
+                    <i class="fab fa-instagram"></i> Instagram
+                </div>
+            </a>
+            <a href="https://www.facebook.com/vidrobox14" class="link-item" target="_blank">
+                <div class="link-bg" style="background-image: url('https://images.unsplash.com/photo-1633675254053-d96c7668c3b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="link-content">
+                    <i class="fab fa-facebook"></i> Facebook
+                </div>
+            </a>
+            <a href="mailto:contato@vidrobox.com?subject=Orçamento de Vidraçaria" class="link-item">
+                <div class="link-bg" style="background-image: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="link-content">
+                    <i class="far fa-envelope"></i> E-mail
+                </div>
+            </a>
+            <a href="https://maps.app.goo.gl/x9BTpRgtREkmFN4C6" class="link-item" target="_blank">
+                <div class="link-bg" style="background-image: url('https://images.unsplash.com/photo-1587220708262-97868e3515eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="link-content">
+                    <i class="fas fa-map-marker-alt"></i> Localização
+                </div>
+            </a>
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://wa.me/558791340026" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/vidrobox14" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/vidrobox14" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Vidraçaria VidroBox - Todos os direitos reservados</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileItems = document.querySelectorAll('.link-item, .social-icon');
+            
+            profileItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'scale(1.05)';
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
